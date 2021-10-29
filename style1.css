@@ -1,0 +1,459 @@
+/* Body and Nav */
+body{
+    font-family: 'ROBOTO', sans-serif;
+    background-color:rgb(176, 209, 206);
+    
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+    color: gray;
+}
+.nav {
+    overflow: hidden;
+    display: flex;
+    justify-content:space-around;
+    background-color: #494646;
+
+}
+.nav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 18px;
+} 
+.nav a:hover {
+    background-color: paleturquoise;
+    color:black;
+} 
+.nav a.active {
+    background-color: paleturquoise;
+    color: white;
+}
+.nav .icon {
+    display: none;
+}
+@media screen and (max-width: 660px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+    float: left;
+    display: block;
+    }
+}
+@media screen and (max-width: 660px) {
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+    }
+}
+#navfixed{
+    position:relative;
+    top: 0;
+    width: 100%;
+}
+#footerDiv{
+    text-align: center;
+    font-size: 14px;
+    padding: 50px 20px;
+    background-color: #052e35; 
+}   
+
+marquee{
+    display:inline;
+}
+
+#main
+{
+    display:block;
+    margin:auto;
+}
+
+.more{
+    position: relative;
+    left:500px;
+    top:15px;
+}
+
+#Intro{
+    margin: 30px 250px;
+}
+.Title, .Des, .Blog{
+    text-align: center;
+}
+hr{
+    border: 0.9px solid #BEBEBE;
+}
+input[type="button"]{
+    padding: 5px 15px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    border-radius: 5px;
+}
+
+.Image{
+    margin: 0px auto;
+    width: 64px;
+}
+.Button{
+    margin: 0px auto;
+    width: 35%;
+}
+.Button-Price {
+    margin: 0px auto;
+    width: 60px;
+}
+
+#Price-Des{
+    margin: 50px 250px;
+}
+iframe{
+    margin: 10px 0px 10px 20px;
+    
+}
+hr{
+    width: 50%;
+    margin-top: 30px;
+}
+
+
+#Team-Sec{
+    margin: 50px 250px;
+}
+.Team-Center{
+    margin: 0 auto;
+}
+#form-in{
+    margin: 0 auto;
+    width: 550px;
+}
+#form-txt {
+    padding: 20px 100px;
+    border: none;
+    border-radius: 5px;
+}
+        /* top Intro*/
+        .intro{
+            position:relative;
+            top:50px;
+            left:200px;
+            width:800px;
+            height:500px;
+        }
+        .top-intro{
+            margin-left:400px;
+        }
+        .Intro-div2{
+            display:inline-block;
+            padding:50px;
+            margin:5px;
+            width:250px;
+            height:400px;
+            background-color:rgb(128, 120, 120); 
+            border:5px solid rgb(56, 37, 37);
+            position:relative;
+          
+            
+        }
+        .Intro-div3{
+          display:inline-block;
+          padding:50px;
+          margin:5px;
+          width:250px;
+          height:400px;
+          background-color:rgb(128, 120, 120); 
+          border:5px solid rgb(56, 37, 37);
+          position:relative;
+          
+      }
+        /* Product*/
+        .DivPro{
+          position: relative;
+          background-color: rgb(230, 216, 216);
+          width:100%;
+      }
+        .div-product1{
+          display:inline-block;
+          padding:10px;
+          width:250px;
+          height:550px;
+          margin:10px;
+          position:relative;
+          
+      }
+      .div-product2{
+          display:inline-block;
+          padding:10px;
+          width:250px;
+          height:550px;
+          margin-left:10px;
+          position:relative;
+          
+      }
+      .div-product3{
+          display:inline-block;
+          padding:10px;
+          width:250px;
+          height:550px;
+          margin-left:10px;
+          position:relative;
+          
+      }
+      .div-product4{
+        display:inline-block;
+        padding:10px;
+        width:250px;
+        height:550px;
+        margin-left:10px;
+        position:relative;
+        
+    }
+    .div-product5{
+      display:inline-block;
+      padding:10px;
+      width:250px;
+      height:550px;
+      margin-left:10px;
+      position:relative;  
+  }
+/*mobile mode */
+@media only screen and (min-width: 320px){
+    body{
+        margin: 0px;
+    }
+    #Intro{
+        margin: 30px 2px;
+    }
+    #Intro-Sec{
+        display: flex;
+        flex-direction: column;
+    }
+    #Para{
+        margin: 0px 10px 20px 10px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .Intro-Div{
+        display: flex;
+        flex-direction: column;
+    }
+    .intro{
+        padding: 15px;
+        margin: 10px 10px;
+        border-radius: 0px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+    .Price-Title, .videos, .Team, .form {
+        text-align: center;
+        padding: 10px;
+        color: rgb(56, 37, 37);
+        width: 150px;
+        border-radius: 55px;
+        margin: 30px auto 0px auto;
+        font-size: 30px;
+    }
+    #imgSmall{
+        display: block;
+        margin-top: 25px;
+    }
+    input[type="button"] {
+        padding: 5px 15px;
+        background-color: rgb(190,120,141);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    #Price-Des{
+        margin: 0px 15px;
+    }
+    #Team-Sec {
+        margin: 0px;
+    }
+    #imgLarge, #imgMedium{
+        display: none;
+    }
+    iframe{
+        margin: 10px auto 10px auto;
+        
+        width: 250px;
+        height: 200px;
+    }
+    #form-out {
+        
+        border-radius: 0px;
+        background-color:  #c4aead;
+        padding: 80px 0px;
+    }
+    #form-in {
+       
+        margin: 0 0 0 50px;
+        position:relative;
+        left:30px;
+        width: 200px;
+    }
+    #form-submit {
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: rgb(145, 163, 176);
+    }
+    #form-txt{
+        padding: 20px 20px;
+        border: 1px solid rgb(145, 163, 176);
+        border-radius: 5px;
+    }
+
+   
+    #Blog-Sec{
+        display: flex;
+        flex-direction: column;
+        background-color: #fdfeff;
+    }
+
+    #cont .contact_form{
+        background: #ecbdbd;
+    }
+    
+    #cont form label{
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    #cont form input, #cont form textarea{
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+      border: none;
+      outline: none;
+    }
+    #cont form button{
+        background: #4c516d;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+}
+/* size of 600px */
+@media only screen and (min-width : 600px){
+    #imgMedium{
+        display: block;
+        margin-top: 25px;
+    }
+    #imgSmall{
+        display: none;
+    }
+}
+/* Tablet mode */
+@media only screen and (min-width : 768px){
+    #Intro-Sec{
+        display: flex;
+        flex-direction: row;
+    }
+    .Intro-Div{
+        display: flex;
+        flex-direction: row;
+    }
+    #form-in {
+        margin: 0 auto;
+        width: 320px;
+    }
+    #form-submit{
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    iframe {
+        margin: 10px auto 10px auto;
+        
+        width: 200px;
+        height: 200px;
+    }
+    #blog-sec{
+        display: flex;
+        flex-direction:row;
+    }
+}
+@media (min-width:961px) {
+    #blog-sec{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 150px;
+    }
+    #Intro {
+        margin: 10px 100px;
+    }
+    #Price-Des {
+        margin: 0px 150px;
+    }
+    iframe {
+        margin: 10px auto 10px auto;
+        
+        width: 300px;
+        height: 200px;
+    }
+    #Team-Sec{
+        margin: 0px 200px;
+    }
+    #form-in{
+        margin: 0 auto;
+        width: 470px;
+    }
+    #form-txt {
+        padding: 20px 100px;
+        border: 1px solid #13ddf3;
+        border-radius: 5px;
+    }
+}
+@media (min-width:1024px){
+    #imgLarge{
+        display: block;
+        margin-top: 25px;
+    }
+    #imgMedium{
+        display: none;
+    }
+}
+@media (min-width:1281px){
+    #Intro {
+        margin: 10px 250px;
+    }
+    #Team-Sec {
+        margin: 0px 350px;
+    }
+    iframe {
+        margin: 10px auto 10px auto;
+       
+        width: 450px;
+        height: 400px;
+    }
+    #Price-Des {
+        margin: 0px 250px;
+    }
+}
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+
+
+
+
